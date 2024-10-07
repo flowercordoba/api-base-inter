@@ -34,8 +34,8 @@ async function bootstrap() {
   InterbankDocumentation.setup(app);
 
 
-  await app.listen(envs.PORT);
-  console.log(`Server running on port: ${envs.PORT}`);
+  await app.listen(5000);
+  console.log(`Server running on port: ${5000}`);
 }
 
 bootstrap();
