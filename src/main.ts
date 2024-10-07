@@ -2,9 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
 import { AllExceptionsFilter } from './shared/pipes/all-exceptions.filter';
-import { envs } from './shared/config';
 import { InterbankDocumentation } from './shared/modules/documentation/documentation.interbank.module';
-
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
@@ -33,9 +31,10 @@ async function bootstrap() {
 
   InterbankDocumentation.setup(app);
 
-
-  await app.listen(5000);
-  console.log(`Server running on port: ${5000}`);
+  // Utilizar el puerto proporcionado por el entorno o usar 3000 por defecto
+  const port = process.env.PORT || 3000;
+  await app.listen(port);
+  console.log(`Server running on port: ${port}`);
 }
 
 bootstrap();
