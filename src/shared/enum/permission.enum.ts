@@ -1,0 +1,16 @@
+export enum Permission {
+  CREATE_USER = 'create_user',
+  EDIT_USER = 'edit_user',
+  DELETE_USER = 'delete_user',
+  VIEW_USER = 'view_user',
+  INITIATE_PAYMENT = 'initiate_payment',
+  VIEW_PAYMENT = 'view_payment',
+  REFUND_PAYMENT = 'refund_payment',
+  MANAGE_PAYMENT_METHODS = 'manage_payment_methods',
+  MANAGE_ROLES = 'manage_roles',
+  MANAGE_PERMISSIONS = 'manage_permissions',
+  CONFIGURE_INTEGRATIONS = 'configure_integrations',
+  VIEW_INTEGRATIONS = 'view_integrations',
+  VIEW_DASHBOARD = 'view_dashboard',
+  VIEW_REPORTS = 'view_reports',
+}

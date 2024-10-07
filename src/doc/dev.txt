@@ -1,0 +1,10 @@
+AuthModule
+UserModule
+FundingProviderModule
+CreditModule
+InvoiceModule (antes que Payment, ya que los pagos deben asociarse a facturas)
+PaymentModule
+WithdrawalModule
+TransactionsModule
+ApiKeyModule
+ManagerModule
